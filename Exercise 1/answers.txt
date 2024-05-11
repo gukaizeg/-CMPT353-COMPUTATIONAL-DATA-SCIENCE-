@@ -1,0 +1,8 @@
+1.The routines pivot_months_pandas() and pivot_months_loops() are separated to do computations using Pandas and NumPy in the file monthly_totals.py.Pandas' more intuitive and expressive data manipulation features made it simpler to deal with when conducting the same calculations with it as opposed to NumPy. Pandas provides for more concise and declarative data manipulation, which makes code written with it generally simpler to read and understand.
+
+2.timeit pivot_months_pandas(data):4.18 ms ± 62.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+timeit pivot_months_loops(data):162 ms ± 938 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+
+In Pandas, the pivot() and aggregation functions make advantage of internal, highly optimised algorithms to process the data in parallel and accelerate computation. Additionally, Pandas provides C-based extensions that can accelerate specific operations like data aggregation and pivoting.
+
+On the other hand, the NumPy implementation that employs loops and iterations may result in slower calculation because it operates on each element separately and does not benefit from the underlying optimised algorithms and vectorized operations. 

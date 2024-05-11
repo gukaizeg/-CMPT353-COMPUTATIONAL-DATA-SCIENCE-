@@ -1,0 +1,2 @@
+Idea: maybe adding an extra column of pandemic of the entire country will help with prediction?
+Idea2: maybe also add other countries' pandeic situations?

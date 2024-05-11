@@ -1,0 +1,3 @@
+It appears that different regions have different correlations between the covid pandemic and the unemployment rate
+Quebec's unemployment seems most related to its covid cases and deaths. all three linear fits and the polynomial fits gave great predictions.
+Manitoba's unemployment seems least realted to its covid cases and deaths. It seems that Manitoba's surge of unemployment was as result of other regions' pandemic situation.
