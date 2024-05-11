@@ -1,0 +1,3 @@
+1.In the reddit_relative.py program, we would cache the DataFrame that holds the computed and filtered average scores for each subreddit. If we did not use .cache(), each time this DataFrame is needed it would trigger a recomputation, which would increase the execution time.
+
+2.Broadcasting a DataFrame reduces network data transfer, enhancing the efficiency of join operations. In the case of the "best author" program, this operation can reduce the program's running time.

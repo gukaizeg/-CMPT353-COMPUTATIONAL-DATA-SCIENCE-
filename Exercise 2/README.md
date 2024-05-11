@@ -1,55 +1,35 @@
-## Exercise 1 - Getting Started with NumPy and Pandas
+# Exercise 2：Wikipedia Page Views and Dog Rates Tweet Analysis
 
-### Overview
+## Overview
+This repository contains the analysis of Wikipedia page views and the examination of tweet ratings from the @dog_rates Twitter account. The project is divided into two parts:
+1. **Plotting Wikipedia Page Views** - Visualization of Wikipedia page view data across two different time frames.
+2. **Analyzing Tweets from @dog_rates** - Analysis of dog rating trends over time to detect any grade inflation.
 
-This exercise is designed to familiarize you with the NumPy and Pandas libraries, emphasizing array manipulations and data frame operations without traditional looping constructs. The main tasks involve data processing and analysis using provided datasets.
+## Part 1: Plotting Wikipedia Page Views
 
-#### Python Libraries
-Ensure you have the necessary Python libraries installed:
-- NumPy
-- Pandas
-- Statsmodels
-- Jupyter
+### Description
+This part involves generating plots to visualize the distribution of Wikipedia page views using two datasets from different hours.
 
-#### Tasks
-1. **Data Visualization and Signal Processing:**
-   - Create a sine wave signal array, simulate noisy sensor data, and attempt to filter out the noise.
-   - Visualize both the original and noisy signals in a Jupyter Notebook named `signal-plot.ipynb`.
+### Usage
+Run the script with the command below to generate plots:
+```bash
+python3 create_plots.py pagecounts-20190509-120000.txt pagecounts-20190509-130000.txt
 
-2. **Data Analysis with NumPy:**
-   - Load data from `monthdata.npz` which includes precipitation data for various Canadian cities.
-   - Perform analysis to determine city with the lowest total precipitation, average monthly precipitation, and more.
-   - Develop a Python script `np_summary.py` to calculate and display these statistics.
+## Part 2: Analyzing Tweets from @dog_rates
 
-#### Getting Started with Pandas
-- Repeat the analysis using Pandas for enhanced data handling and output formatting, excluding quarterly totals.
-- Develop a Python script `pd_summary.py` that mirrors the NumPy analysis but uses Pandas for data manipulation.
+### Description
+This part focuses on analyzing the trend of dog ratings over time from tweets collected from the @dog_rates Twitter account.
 
-### Additional Information
-Refer to the provided screenshots and instructions in the course materials to replicate the analysis and results.
+### Data
+The data is contained in `dog_rates_tweets.csv`, which includes timestamps and ratings extracted from the tweets.
 
-## Analysis with Pandas
+### Usage
+Open the `dog-rates.ipynb` Jupyter notebook and execute the cells to perform the analysis and generate the plots.
 
-### Overview
-Further explore data manipulation and aggregation techniques in Pandas to process and analyze a refined dataset derived from the Global Historical Climatology Network for the year 2016.
+### Analysis Steps
+- **Data Loading and Cleaning:** Load tweets, extract valid ratings, and remove outliers.
+- **Time Parsing:** Convert tweet timestamps into datetime objects for analysis.
+- **Trend Analysis:** Perform linear regression to determine trends in dog ratings over time.
 
-#### Task
-- Implement the `monthly_totals.py` script to regenerate initial data files using Pandas, ensuring to follow the structure provided in `monthly_totals_hint.py`.
-
-## Timing Comparison
-
-### Overview
-Compare the performance of different data pivoting methods in Pandas against a baseline implementation using loops.
-
-#### Instructions
-- Use the `timing.ipynb` notebook to run benchmarks on the provided pivoting functions.
-- Ensure correctness and evaluate performance differences.
-
-## Questions and Reflections
-
-### Overview
-Reflect on the exercises and document your experiences and findings.
-
-#### Tasks
-- Answer the provided questions in `answers.txt`, focusing on your experiences with NumPy vs Pandas and the performance analysis of pivoting functions.
-
+### Visualization
+- **Scatter Plot with Trend Line:** Visualize ratings over time along with a linear trend line to assess rating inflation.

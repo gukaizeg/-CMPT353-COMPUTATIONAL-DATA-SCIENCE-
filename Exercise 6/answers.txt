@@ -1,0 +1,16 @@
+1.Looking at the given p-values, we don't see obvious signs of p-hacking. Generally, in the case of p-hacking, it might see a lot of p-values just below 0.05
+
+2.If there are n sorting implementations, the number of possible pairs that can be made for T-tests is given by the combination formula C(n, 2) = n * (n - 1) / 2.
+  We have 7 sorting implementations, the number of pairs for which we would run T-tests would be C(7, 2) = 7 * 6 / 2 = 21.If we look for a p-value of less than 0.05 in these 21 tests, there is a good chance that we will come across false positives just by chance. This is due to the issue of multiple comparisons or the problem of multiple testing. The more hypotheses are statistically tested, the more likely it is to incorrectly reject a null hypothesis (i.e., a type I error).
+  (So, if we were to run these 21 tests without any correction, the probability of incorrectly rejecting the null hypothesis in at least one test is 1 - 0.36 ≈ 0.64 or 64%.)
+  To correct for the increase in the chance of experiencing type I errors due to multiple comparisons, methods like the Bonferroni correction are used. With the Bonferroni correction, we would divide the significance level (0.05 in this case) by the number of comparisons. For example, if we are making 21 comparisons, we would consider results as significant only if the p-value is less than 0.05/21 ≈ 0.00238. By using such a correction, we control the family-wise error rate and reduce the chances of any false conclusions.
+
+3. 
+partition_sort    0.004619
+qs1               0.005484
+qs5               0.006621
+merge1            0.006839
+qs4               0.007039
+qs3               0.007448
+qs2               0.007553
+

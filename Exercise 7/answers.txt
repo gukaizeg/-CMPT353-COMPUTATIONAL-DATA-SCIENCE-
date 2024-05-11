@@ -1,0 +1,4 @@
+1.The residual are close-enough to being normal to look at the OLS p-value. According to the plot, we can find there is a symmetric distribution around zero,the residuals do indeed follow a normal distribution, so the assumptions of the OLS regression are met.
+  The p-value given by the regression is very close to 0, indicating a statistically significant relationship between the timestamp (time) and the rating. If the residuals are indeed normally distributed, this p-value suggests that we can confidently reject the null hypothesis (which states that there's no relationship between time and ratings), and reasonably conclude that dog ratings are increasing over time.
+
+2. Yes, it's better.In the update step, the Kalman filter uses the difference between the predicted and actual measurements (the residual) to update the current state estimate,the Kalman filter to do a better job of capturing the true signal amid the noise. 

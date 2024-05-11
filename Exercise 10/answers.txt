@@ -1,0 +1,8 @@
+1.(1)real    0m7.888s
+  (2)real    0m13.647s
+  (3)real    0m12.191s
+  (4)real    0m12.024s
+
+2.Based on the above, it appears that most of the time taken to process the reddit-2 dataset is in reading the files, as the time spent on file reading significantly reduces after specifying a schema. However, the time spent on calculating averages has a relatively smaller impact on the total processing time.
+  
+3.In my wikipedia_popular.py, I used .cache() after reading the data and performing initial filtering. This was to speed up access to the DataFrame for subsequent transformations (like grouping, finding maximum, etc.). Specifically, filtered_lines.cache() is used at this stage.
