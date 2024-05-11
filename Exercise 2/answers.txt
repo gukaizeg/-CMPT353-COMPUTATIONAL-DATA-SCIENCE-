@@ -1,0 +1,5 @@
+1.In the hint above,The y-value on the best-fit line by calculating  ' data['timestamp']*fit.slope + fit.intercept '. A NumPy array with the same length as the sequence of data['timestamp'] is the calculation's output.As predicted by the linear regression model, the values in this array indicate the ratings.
+
+2.This computation generates a fitted straight line on the graph by using the equation of the line y = mx + c, where m is the slope (in this instance fit.slope), x is the value of data['timestamp'], and c is the y-axis intercept (fit.intercept). The projected rating are plotted on the y-axis, and the fitted straight line is derived by plotting data['created_at'] on the x-axis.
+
+Because they reflect the same moment in time, the created_at variables and timestamp values are coupled appropriately. When we plot created_at vs. predicted ratings, we're really showing timestamp (as a readable date) vs. predicted ratings, which are computed using the numeric timestamp. By doing this, it is made sure that each plot point corresponds to the proper date and expected rating.
