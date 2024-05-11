@@ -15,7 +15,7 @@ Run the script with the command below to generate plots:
 ```bash
 python3 create_plots.py pagecounts-20190509-120000.txt pagecounts-20190509-130000.txt
 
-## Part 2: Analyzing Tweets from @dog_rates
+# Part 2: Analyzing Tweets from @dog_rates
 
 ### Description
 This part focuses on analyzing the trend of dog ratings over time from tweets collected from the @dog_rates Twitter account.
