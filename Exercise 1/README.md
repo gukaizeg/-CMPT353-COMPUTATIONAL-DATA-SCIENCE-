@@ -11,9 +11,6 @@ Ensure you have the necessary Python libraries installed:
 - Statsmodels
 - Jupyter
 
-#### Jupyter Notebook
-Start by launching a Jupyter Notebook to explore and manipulate data. Detailed steps and features of Jupyter Notebooks can be found in the provided [Jupyter instructions](URL-to-Jupyter-instructions).
-
 #### Tasks
 1. **Data Visualization and Signal Processing:**
    - Create a sine wave signal array, simulate noisy sensor data, and attempt to filter out the noise.
